@@ -21,18 +21,21 @@ namespace Minsktelekomstroy
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<MenuItem> menu = new List<MenuItem>();
         public MainWindow()
         {
             InitializeComponent();
-            List<MenuItem> menu = new List<MenuItem>();
 
-            menu.Add(new MenuItem("Главное меню", PackIconKind.Menu));
-            menu.Add(new MenuItem("Отделов кадров", PackIconKind.People));
-            menu.Add(new MenuItem("Услуги", PackIconKind.ServiceToolbox));
-            menu.Add(new MenuItem("О компании", PackIconKind.About));
-            menu.Add(new MenuItem("Справочная система", PackIconKind.Help));
-            menu.Add(new MenuItem("Выход", PackIconKind.Close));
-            ListViewMenu.ItemsSource = menu;
+        }
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

@@ -7,21 +7,47 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
          Title="MainWindow" Height="600" Width="1080" Background="#FF36235F" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid MouseDown="Grid_MouseDown">
         <StackPanel Width="250" HorizontalAlignment="Left" Background="#FF472076">
             <Grid Height="150" Background="White">
-
+                <TextBlock Text="ОАО Минсктелекомстрой" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="18" Foreground="#FF472076"/>
             </Grid>
-            <ListView x:Name="ListViewMenu">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal" Height="30">
-                            <materialDesign:PackIcon Kind="{Binding Path=Icon}" Width="20" Height="20" VerticalAlignment="Center"/>
-                            <TextBlock Text="{Binding Path=Name}" Margin="20 0" FontSize="15" VerticalAlignment="Center"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <Button Margin = "10" Background="#FF472076" BorderBrush="#FF472076">
+                <Grid Width="100">
+                    <materialDesign:PackIcon Kind = "ViewDashboard" Margin="-26,0,0,0" Width="17"></materialDesign:PackIcon>
+                    <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Главное меню" Margin="6,0,-12,0" Width="106"></TextBlock>
+                </Grid>
+            </Button>
+            <Button Margin = "10" Background="#FF472076" BorderBrush="#FF472076">
+                <Grid Width="100">
+                    <materialDesign:PackIcon Kind = "People" Margin="-26,0,0,0" Width="17"></materialDesign:PackIcon>
+                    <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Отдел кадров" Margin="8,0,0,0"></TextBlock>
+                </Grid>
+            </Button>
+            <Button Margin = "10" Background="#FF472076" BorderBrush="#FF472076">
+                <Grid Width="100">
+                    <materialDesign:PackIcon Kind = "Office" Margin="-26,0,0,0" Width="17"></materialDesign:PackIcon>
+                    <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Оказание услуг" Margin="4,0,-24,0" Width="120"></TextBlock>
+                </Grid>
+            </Button>
+            <Button Margin = "10" Background="#FF472076" BorderBrush="#FF472076">
+                <Grid Width="100">
+                    <materialDesign:PackIcon Kind = "Information" Margin="-26,0,0,0" Width="17"></materialDesign:PackIcon>
+                    <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="О компании" Margin="4,0,-19,0" Width="115"></TextBlock>
+                </Grid>
+            </Button>
+            <Button Margin = "10" Background="#FF472076" BorderBrush="#FF472076">
+                <Grid Width="100">
+                    <materialDesign:PackIcon Kind = "Help" Margin="-26,0,0,0" Width="17"></materialDesign:PackIcon>
+                    <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Справочная система" Margin="4,0,-55,0" Width="151"></TextBlock>
+                </Grid>
+            </Button>
+            <Button Margin = "10" Background="#FF472076" BorderBrush="#FF472076" Click="Button_Click">
+                <Grid Width="100">
+                    <materialDesign:PackIcon Kind = "ExitToApp" Margin="-26,0,0,0" Width="17"></materialDesign:PackIcon>
+                    <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Выход" Margin="4,0,-55,0" Width="151"></TextBlock>
+                </Grid>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>
