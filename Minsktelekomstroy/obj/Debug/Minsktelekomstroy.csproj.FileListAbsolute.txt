@@ -19,6 +19,7 @@ C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Min
 C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Minsktelekomstroy.exe
 C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Minsktelekomstroy.pdb
 C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\App.baml
-C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Views\MainWindow.g.cs
 C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Views\MainWindow.baml
-C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Minsktelekomstroy.csprojAssemblyReference.cache
+C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Views\MainWindow.g.cs
+C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Views\PersonnelDepartment.g.cs
+C:\Users\artem\Desktop\Diploma\Minsktelekomstroy\Minsktelekomstroy\obj\Debug\Views\PersonnelDepartment.baml

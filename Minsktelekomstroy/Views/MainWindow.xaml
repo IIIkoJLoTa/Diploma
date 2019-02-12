@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Minsktelekomstroy"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
          Title="MainWindow" Height="600" Width="1080" Background="#FF36235F" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
@@ -18,7 +17,7 @@
                     <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Главное меню" Margin="6,0,-12,0" Width="106"></TextBlock>
                 </Grid>
             </Button>
-            <Button Margin = "10" Background="#FF472076" BorderBrush="#FF472076">
+            <Button Name="PersonnelDepartmentButton" Margin = "10" Background="#FF472076" BorderBrush="#FF472076" Click="PersonnelDepartmentButton_Click">
                 <Grid Width="100">
                     <materialDesign:PackIcon Kind = "People" Margin="-26,0,0,0" Width="17"></materialDesign:PackIcon>
                     <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Отдел кадров" Margin="8,0,0,0"></TextBlock>
@@ -42,7 +41,7 @@
                     <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Справочная система" Margin="4,0,-55,0" Width="151"></TextBlock>
                 </Grid>
             </Button>
-            <Button Margin = "10" Background="#FF472076" BorderBrush="#FF472076" Click="Button_Click">
+            <Button Name="ExitButton" Margin = "10" Background="#FF472076" BorderBrush="#FF472076" Click="ExitButton_Click">
                 <Grid Width="100">
                     <materialDesign:PackIcon Kind = "ExitToApp" Margin="-26,0,0,0" Width="17"></materialDesign:PackIcon>
                     <TextBlock HorizontalAlignment = "Center" VerticalAlignment="Center" Text="Выход" Margin="4,0,-55,0" Width="151"></TextBlock>

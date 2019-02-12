@@ -10,23 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MaterialDesignThemes.Wpf;
 
 namespace Minsktelekomstroy
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PersonnelDepartment.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PersonnelDepartment : Window
     {
-        PersonnelDepartment personnelDepartment;
+        MainWindow mainWindow;
 
-        public MainWindow()
+        public PersonnelDepartment()
         {
             InitializeComponent();
-
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
@@ -34,15 +31,10 @@ namespace Minsktelekomstroy
             DragMove();
         }
 
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
-        }
-
-        private void PersonnelDepartmentButton_Click(object sender, RoutedEventArgs e)
-        {
-            personnelDepartment = new PersonnelDepartment();
-            personnelDepartment.Show();
+            mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
         }
     }
